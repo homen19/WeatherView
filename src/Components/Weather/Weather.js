@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import '../CSS/Stylesheet.css';
 
+
 export const Weather = () => {
     const [city, setCity] = useState(null);
     const [search, setSearch] = useState("Mumbai");
@@ -28,6 +29,7 @@ export const Weather = () => {
                         onChange={(event) => {
                             setSearch(event.target.value)
                         }}
+                        placeholder="enter city name"
 
                     />
                 </div>
@@ -40,7 +42,7 @@ export const Weather = () => {
                         {search}
                     </h2>
                     <h1 className="temp">
-                        {city.temp} °Cel
+                    {city.temp} °Cel
                     </h1>
                     <h3 className="temp_min_max">Min: {city.temp_min} | Max : {city.temp_max}</h3>
                 </div>

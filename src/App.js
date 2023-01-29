@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className='land-main'>
-        <h1>Weather Application</h1>
+        <h1>Weather Today</h1>
 
         <Weather />
       </div>
